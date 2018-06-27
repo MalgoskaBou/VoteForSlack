@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_button">20sp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="text_size_welcome_description">16sp</dimen>
+    <dimen name="text_size_heading_small">26sp</dimen>
+    <dimen name="text_size_heading_large">30sp</dimen>
+    <dimen name="margin_bottom_welcome">40dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="text_size_edit">16sp</dimen>
+    <dimen name="edit_text_height">200dp</dimen>
+</resources>

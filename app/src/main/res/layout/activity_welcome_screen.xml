@@ -6,4 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".WelcomeScreen">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome_back_joanna_kosinska_unsplash"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_bottom_welcome"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_heading_large"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/welcome"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_heading_small"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/to"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_heading_small"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/vote_for_slack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_welcome_description"
+            android:padding="@dimen/padding_medium"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/description"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_go_to_vote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/go_to_vote"
+        android:textSize="@dimen/text_size_button"
+        android:textColor="@color/colorText"
+        android:layout_margin="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 </android.support.constraint.ConstraintLayout>

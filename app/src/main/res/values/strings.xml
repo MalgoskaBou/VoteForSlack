@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">VFS</string>
+    <string name="app_name">Vote</string>
+    <string name="close_app">Close app</string>
+    <string name="close_app_info">Do you want to turn off the application? \n(the app will still be available in the background)</string>
+    <string name="welcome">Welcome</string>
+    <string name="to">to</string>
+    <string name="vote_for_slack">Vote for Slack</string>
+    <string name="description">Place to show your will in saving our Google and Udacity Scholarship (2017-2018 Europe and Middle East) Slack space: GoogleDevNDScholars</string>
+    <string name="go_to_vote">Go to vote</string>
+    <string name="cast_your_vote">Cast your vote</string>
+    <string name="why_love_slack">Why do you love Slack?</string>
+    <string name="slack_nick_name">Enter your Slack nick name (@slackName)</string>
+    <string name="voting_question">Do you want Slack space: <b>GoogleDevNDScholars</b> to stay available after the end of Scholarship?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="i_don_t_care">I don\'t care</string>
 </resources>
