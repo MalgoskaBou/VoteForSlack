@@ -14,4 +14,8 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="i_don_t_care">I don\'t care</string>
+    <string name="thank_you">Thank you,\n\n <i>Your vote was submitted successfully</i>!</string>
+    <string name="column_no">no</string>
+    <string name="column_yes">yes</string>
+    <string name="column_dont_care">don\'t \ncare</string>
 </resources>
