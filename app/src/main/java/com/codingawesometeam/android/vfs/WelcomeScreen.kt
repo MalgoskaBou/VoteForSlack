@@ -26,7 +26,7 @@ class WelcomeScreen : AppCompatActivity() {
 
     override fun onBackPressed() {
        alert(getString(R.string.close_app_info), getString(R.string.close_app)) {
-            yesButton { finishAffinity() }
+           yesButton { finish() }
             noButton { }
            isCancelable = false
         }.show()
