@@ -6,4 +6,125 @@
     android:layout_height="match_parent"
     tools:context=".ThanksScreen">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thank_you_teemu_paananen_unsplash" />
+
+    <TextView
+        android:id="@+id/text_thank_you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_heading_large"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/thank_you"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_yes_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height_rating"
+        android:textSize="@dimen/text_size_rating"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        tools:text="40%"
+        app:layout_constraintTop_toBottomOf="@id/text_thank_you"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_no_percent"/>
+
+    <TextView
+        android:id="@+id/text_no_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height_rating"
+        android:textSize="@dimen/text_size_rating"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        tools:text="50%"
+        app:layout_constraintTop_toBottomOf="@id/text_thank_you"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_do_not_care_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height_rating"
+        android:textSize="@dimen/text_size_rating"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        tools:text="10%"
+        app:layout_constraintTop_toBottomOf="@id/text_thank_you"
+        app:layout_constraintStart_toEndOf="@id/text_no_percent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/yes_votes"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:background="@color/colorYellow"
+        app:layout_constraintBottom_toTopOf="@id/text_yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/no_votes"/>
+
+    <TextView
+        android:id="@+id/text_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height_rating"
+        android:textSize="@dimen/text_size_heading_small"
+        android:textColor="@color/colorText"
+        android:padding="@dimen/padding_small"
+        android:textAllCaps="true"
+        android:text="@string/column_yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_no"/>
+
+    <View
+        android:id="@+id/no_votes"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:background="@color/colorRed"
+        app:layout_constraintBottom_toTopOf="@id/text_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_no"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height_rating"
+        android:textSize="@dimen/text_size_heading_small"
+        android:textColor="@color/colorText"
+        android:padding="@dimen/padding_small"
+        android:textAllCaps="true"
+        android:text="@string/column_no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/do_not_care_votes"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@id/text_do_not_care"
+        app:layout_constraintStart_toEndOf="@id/no_votes"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_do_not_care"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height_rating"
+        android:textSize="@dimen/text_size_rating"
+        android:textColor="@color/colorText"
+        android:padding="@dimen/padding_small"
+        android:textAllCaps="true"
+        android:text="@string/column_dont_care"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_no"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </android.support.constraint.ConstraintLayout>
