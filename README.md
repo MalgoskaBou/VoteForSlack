@@ -1,6 +1,6 @@
 # VoteForSlack
 
-application for casting votes
+application for casting votes --- DURING WORK :hammer:
 
 LAYOUT UPDATE!!! ;) 
 
